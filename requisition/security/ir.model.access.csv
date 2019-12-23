@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_requisition_user,RequisitionUser,model_purchase_requisition,requisition_group_user,1,0,0,0
+access_requisition_manager,RequisitionManager,model_purchase_requisition,requisition_group_manager,1,1,1,1
+access_requisition_line_user,RequisitionLineUser,model_purchase_requisition_line,requisition_group_user,1,0,0,0
+access_requisition_line_manager,RequisitionLineManager,model_purchase_requisition_line,requisition_group_manager,1,1,1,1

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_requisition" name="Requisition"/>
+    <!--<act_window id="action_requisition" name="Requisition Lists" res_model="purchase.requisition" view_mode="tree,form"/>-->
+    <menuitem id="menu_requisition_list" name="Purchase Requisition" parent="menu_requisition" sequence="1" action="action_requisition_view"/>
+    <act_window id="action_purchase_with_requisition" name="PO Lists With Req" res_model="purchase.order" view_mode="tree,kanban,form,pivot,graph,calendar,activity" domain="[('origin','ilike','REQ')]"/>
+    <menuitem id="menu_purchase_with_requisition" name="Purchase Order With Requisition" parent="menu_requisition" sequence ="2" action="action_purchase_with_requisition"/>
+</odoo>
